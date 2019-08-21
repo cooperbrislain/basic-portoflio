@@ -22,12 +22,20 @@ main {
     margin-bottom: 50px;
 }
 
-main img {
-    float: left;
+main>img { 
     display: block;
     width: 200px;
     height: 200px;
+}
+
+main>img:nth-child(odd) {
+    float: left;
     margin-right: 15px;
+}
+
+main>img:nth-child(even) {
+    float: right;
+    margin-left: 15px;
 }
 
 header {
@@ -50,7 +58,7 @@ header h1 {
 
 footer {
     clear: both;
-    border-top: 4px solid #4aaaa5;
+    border-top: 8px solid #4aaaa5;
     background-color: #666;
     position: fixed;
     bottom: 0px;
@@ -59,13 +67,57 @@ footer {
     padding: 5px;
 }
 
-/* General Tags */
-
 nav {
     float: right;
     margin: 12px 0px;
 }
 
+/* General Tags */
+
+figure {
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    background-color: rgba(74,170,165,.75);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+figcaption h4 {
+    margin: 0px;
+}
+
+figcaption ul {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0;
+}
+
+figcaption ul li {
+    display: inline-block;
+    font-size: 10px;
+}
+
+figcaption ul li:nth-child(n+2)::before {
+    content: " • ";
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -83,6 +135,14 @@ h2 {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+h1 a:hover {
+    color: #fff;
 }
 
 .copyright {
