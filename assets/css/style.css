@@ -1,0 +1,108 @@
+/* Structural Tags */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(65, 51, 71);
+    margin: 0;
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+main {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    clear: both;
+    width: 960px;
+    margin: 25px auto;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+main img {
+    float: left;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-right: 15px;
+}
+
+header {
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+header>div {
+    width: 960px;
+    margin: 0px auto;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0px;
+    padding: 5px;
+    background-color: #4aaaa5;
+}
+
+footer {
+    clear: both;
+    border-top: 4px solid #4aaaa5;
+    background-color: #666;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+/* General Tags */
+
+nav {
+    float: right;
+    margin: 12px 0px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    margin-top: 0px;
+    color: #4aaaa5
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.copyright {
+    font-size: 10px;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #4aaaa5;
+    color: #FFF;
+    width: 100px;
+    height: 30px;
+}
+
+p:first-of-type {
+    margin-top: 0;
+}
